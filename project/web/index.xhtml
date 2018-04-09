@@ -10,7 +10,7 @@
     <title>Vogelhandel</title>
 </h:head>
 <h:body>
-<h1>Vogelhandel</h1>
+<h1>Vogelverwaltung</h1>
     <h:form id="form">
         <p:dataGrid var="bird" value="#{indexController.birds}" columns="3" layout="grid"
                     rows="12" paginator="true" id="birds"
@@ -51,6 +51,7 @@
 
                     <h:outputText value="Preis:" />
                     <h:outputText value="#{indexController.selectedBird.price}}"/>
+
                     <p:button outcome="deleteBird" value="Vogel löschen" icon="ui-icon-star">
                     </p:button>
                 </p:panelGrid>
