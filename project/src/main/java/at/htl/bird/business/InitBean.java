@@ -25,8 +25,8 @@ public class InitBean {
     @PostConstruct
     private void init() {
         Bird b1 = new Bird("Rotbauchpapagei", 450, "A04 14 7,5 001");
-        Bird b2 = new Bird("Rüppelspapagei", 500, "A04 14 7,5 002");
-        Bird b3 = new Bird("Goldbugpapagei", 200, "A04 14 7,5 003");
+        Bird b2 = new Bird("Rotrückenara", 1200, "A04 14 7,5 002");
+        Bird b3 = new Bird("Jandayasittich", 200, "A04 14 7,5 003");
         birdRepository.create(b1);
         birdRepository.create(b2);
         birdRepository.create(b3);

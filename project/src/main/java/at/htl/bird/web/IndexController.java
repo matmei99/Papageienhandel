@@ -7,12 +7,14 @@ import at.htl.bird.entities.Bird;
 import at.htl.bird.entities.Pill;
 
 import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.inject.Model;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
 
 @Named
 @ApplicationScoped
+//@Model
 public class IndexController {
     @Inject
     BirdFacade birdRepository;
@@ -39,9 +41,10 @@ public class IndexController {
         return pillRepository.getPills();
     }
 
-    public void deleteBird(){
-        if(selectedBird!=null)
-            birdRepository.removeBird(selectedBird);
+    public void save(){
+        if(selectedBird!=null) {
+            birdRepository.update(selectedBird);
+        }
     }
 
 }

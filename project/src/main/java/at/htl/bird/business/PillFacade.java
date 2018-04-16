@@ -2,6 +2,7 @@ package at.htl.bird.business;
 
 import at.htl.bird.entities.Bird;
 import at.htl.bird.entities.Pill;
+import at.htl.bird.entities.Pillpart;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
